@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ibs_platform/theme/colors.dart';
 import 'package:ibs_platform/theme/style.dart';
 
 class IbsApp extends StatelessWidget {
