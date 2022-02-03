@@ -13,6 +13,7 @@ class IbsApp extends StatelessWidget {
             color: Style.colors.pink,
             child: Text(
               Style.texts.appName,
+              style: Style.IbsPlatform,
             ),
           ),
         ),
