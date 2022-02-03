@@ -6,6 +6,17 @@ class IbsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Style.colors.primary);
+    return MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: Container(
+            color: Style.colors.pink,
+            child: Text(
+              Style.texts.appName,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
