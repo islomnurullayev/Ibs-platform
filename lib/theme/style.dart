@@ -9,7 +9,6 @@ class Style {
   static AppTexts texts = AppTexts();
 
   //text styles
-  // ignore: non_constant_identifier_names
   static TextStyle appName = TextStyle(
     color: colors.black,
     fontSize: 12,
