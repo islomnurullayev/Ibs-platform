@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ibs_platform/theme/colors.dart';
+
 import 'package:ibs_platform/theme/style.dart';
 
 class IbsApp extends StatelessWidget {
@@ -7,6 +7,17 @@ class IbsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Style.colors.primary);
+    return MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: Container(
+            color: Style.colors.pink,
+            child: Text(
+              Style.texts.appName,
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
