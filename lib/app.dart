@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/login/login.dart';
 import 'package:ibs_platform/theme/style.dart';
 
 class IbsApp extends StatelessWidget {
@@ -9,13 +10,7 @@ class IbsApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Container(
-            color: Style.colors.pink,
-            child: Text(
-              Style.texts.appName,
-              style: Style.IbsPlatform,
-            ),
-          ),
+          child: Login(),
         ),
       ),
     );
