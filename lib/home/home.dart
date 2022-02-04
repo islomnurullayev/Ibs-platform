@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ibs_platform/card.dart';
 import 'package:ibs_platform/home/dashboard.dart';
 import 'package:ibs_platform/theme/style.dart';
 
