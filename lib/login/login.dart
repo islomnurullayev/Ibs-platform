@@ -11,6 +11,8 @@ class Login extends StatefulWidget {
 
 class _LoginState extends State<Login> {
   bool hiddenpassword = true;
+  final formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,45 +47,73 @@ class _LoginState extends State<Login> {
                   SizedBox(
                     height: 25,
                   ),
-                  TextField(
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(25),
+                  Form(
+                    key: formKey,
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                    child: Column(
+                      children: [
+                        TextFormField(
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return "You can't have an empty email";
+                            }
+                            if (value.length < 2) {
+                              return "Email must have more than one character";
+                            }
+                          },
+                          decoration: InputDecoration(
+                            labelText: 'Email ID',
+                            helperText:
+                                'This has to be over two characters in length',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(25),
+                              ),
+                            ),
+                            hintText: 'Email ID',
+                            prefixIcon: Icon(Icons.email),
+                          ),
                         ),
-                      ),
-                      hintText: 'Email ID',
-                      prefixIcon: Icon(Icons.email),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  TextField(
-                    obscureText: hiddenpassword,
-                    decoration: InputDecoration(
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(25),
+                        SizedBox(
+                          height: 15,
                         ),
-                      ),
-                      hintText: 'password',
-                      prefixIcon: Icon(Icons.lock),
-                      suffixIcon: InkWell(
-                        onTap: _togglepasswordView,
-                        child: Icon(
-                          Icons.visibility,
+                        TextFormField(
+                          validator: (value) {
+                            if (value!.isEmpty) {
+                              return "You can't have an empty password";
+                            }
+                            if (value.length < 2) {
+                              return "Password must have more than one character";
+                            }
+                          },
+                          obscureText: hiddenpassword,
+                          decoration: InputDecoration(
+                            labelText: 'Password',
+                            helperText:
+                                'This has to be over two characters in length',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(25),
+                              ),
+                            ),
+                            hintText: 'password',
+                            prefixIcon: Icon(Icons.lock),
+                            suffixIcon: InkWell(
+                              onTap: _togglepasswordView,
+                              child: Icon(
+                                Icons.visibility,
+                              ),
+                            ),
+                          ),
+                          maxLength: 8,
                         ),
-                      ),
+                      ],
                     ),
                   ),
                   SizedBox(
                     height: 55,
                   ),
-                  TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: Colors.blue.shade300),
-                    onPressed: () {},
+                  ElevatedButton(
                     child: Center(
                       child: Text(
                         'Login',
@@ -91,6 +121,13 @@ class _LoginState extends State<Login> {
                             TextStyle(color: Style.colors.white, fontSize: 20),
                       ),
                     ),
+                    onPressed: () {
+                      formKey.currentState!.validate()
+                          ? ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('Text is valid')))
+                          : ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('Text is not valid')));
+                    },
                   ),
                   SizedBox(
                     height: 30,
