@@ -82,7 +82,7 @@ class _LoginState extends State<Login> {
                             if (value!.isEmpty) {
                               return "You can't have an empty password";
                             }
-                            if (value.length < 2) {
+                            if (value.length < 6) {
                               return "Password must have more than one character";
                             }
                           },
@@ -105,7 +105,6 @@ class _LoginState extends State<Login> {
                               ),
                             ),
                           ),
-                          maxLength: 8,
                         ),
                       ],
                     ),
@@ -174,4 +173,15 @@ class _LoginState extends State<Login> {
       },
     );
   }
+}
+
+bool get isValidEmail {
+  final emailRegExp = RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
+  return emailRegExp.hasMatch('this');
+}
+
+bool get isValidPassword {
+  final passwordRegExp = new RegExp(
+      r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
+  return passwordRegExp.hasMatch('this');
 }
