@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:ibs_platform/course/coursepage.dart';
 import 'package:ibs_platform/home/home.dart';
-
 import 'package:ibs_platform/login/login.dart';
 
 
@@ -13,11 +12,7 @@ class IbsApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-
-          child: HomeController(),
-
-          child: Login(),
-
+          child: HomeController(),   
         ),
       ),
     );

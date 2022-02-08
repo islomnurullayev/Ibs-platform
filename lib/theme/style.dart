@@ -26,7 +26,7 @@ class Style {
     fontWeight: FontWeight.w300,
   );
 
-  static TextStyle continues = TextStyle(
+  static TextStyle continuees = TextStyle(
     color: colors.black,
     fontSize: 36,
     fontWeight: FontWeight.w500,
@@ -72,6 +72,11 @@ class Style {
   );
 
   static TextStyle username = TextStyle(
+    color: colors.white,
+    fontSize: 10,
+    fontWeight: FontWeight.w300,
+  );
+  static TextStyle username11 = TextStyle(
     color: colors.black,
     fontSize: 10,
     fontWeight: FontWeight.w300,
@@ -98,6 +103,11 @@ class Style {
   static TextStyle cource = TextStyle(
     color: colors.black,
     fontSize: 32,
+    fontWeight: FontWeight.w500,
+  );
+  static TextStyle coursenamebig = TextStyle(
+    color: colors.white,
+    fontSize: 28,
     fontWeight: FontWeight.w500,
   );
 }
