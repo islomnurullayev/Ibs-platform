@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ibs_platform/course/historypages.dart';
+import 'package:ibs_platform/course/courseHistory.dart';
+import 'package:ibs_platform/course/historysaved.dart';
 import 'package:ibs_platform/login/login.dart';
 import 'package:ibs_platform/theme/style.dart';
 
@@ -44,8 +45,8 @@ class _CoursePageState extends State<CoursePage> {
       itemBuilder: (BuildContext context, int index) {
         return GestureDetector(
           onTap: () {
-            print(Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => HistoryPage())));
+            print(Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => CourseHistory())));
           },
           child: Container(
             height: 220,

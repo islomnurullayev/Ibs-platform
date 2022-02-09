@@ -34,6 +34,7 @@ class _HistoryPageState extends State<HistoryPage> {
     '1.2m',
     '7m',
   ];
+  // ignore: non_constant_identifier_names
   Widget get Lists => SizedBox(
         height: 700,
         width: double.infinity,
@@ -42,6 +43,7 @@ class _HistoryPageState extends State<HistoryPage> {
             return Column(
               children: [
                 Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       height: 53,
@@ -53,26 +55,28 @@ class _HistoryPageState extends State<HistoryPage> {
                     SizedBox(
                       width: 12,
                     ),
-                    Column(children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 29),
-                        child: Text(
-                          courseTitle[index],
-                          style: Style.graficdizayner,
-                        ),
-                      ),
-                      SizedBox(
-                        height: 5,
-                      ),
-                      Container(
-                        padding: EdgeInsets.only(right: 40),
-                        child: Text(
-                          creator[index],
-                          textAlign: TextAlign.start,
-                          style: Style.username11,
-                        ),
-                      )
-                    ]),
+                    Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 29),
+                            child: Text(
+                              courseTitle[index],
+                              style: Style.graficdizayner,
+                            ),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(right: 40),
+                            child: Text(
+                              creator[index],
+                              textAlign: TextAlign.start,
+                              style: Style.username11,
+                            ),
+                          )
+                        ]),
                   ],
                 ),
                 SizedBox(
