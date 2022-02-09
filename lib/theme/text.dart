@@ -13,5 +13,6 @@ class AppTexts {
   final String filter = "Filtrlash";
   final String webinar = "Webinar";
   final String blog = "Blog";
+
   final String results = "Natijalar";
 }

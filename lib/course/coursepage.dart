@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/course/historypages.dart';
 import 'package:ibs_platform/login/login.dart';
 import 'package:ibs_platform/theme/style.dart';
 
@@ -44,7 +45,7 @@ class _CoursePageState extends State<CoursePage> {
         return GestureDetector(
           onTap: () {
             print(Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Login())));
+                .push(MaterialPageRoute(builder: (context) => HistoryPage())));
           },
           child: Container(
             height: 220,
@@ -130,6 +131,8 @@ class _CoursePageState extends State<CoursePage> {
                                   setState(() {
                                     outline = !outline;
                                   });
+                                  Navigator.of(context).push(MaterialPageRoute(
+                                      builder: (context) => HistoryPage()));
                                 }),
                           ],
                         )
