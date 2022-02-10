@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/course/coursepage.dart';
 import 'package:ibs_platform/home/dashboard.dart';
 import 'package:ibs_platform/theme/style.dart';
 
@@ -14,11 +15,7 @@ class _HomeControllerState extends State<HomeController> {
 
   static List<Widget> widgetOptions = [
     DashboardController(),
-    Container(
-      width: 100,
-      height: 100,
-      color: Style.colors.blue,
-    ),
+    CoursePage(),
     Container(
       width: 100,
       height: 100,
