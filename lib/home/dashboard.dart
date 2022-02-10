@@ -16,7 +16,7 @@ class DashboardController extends StatelessWidget {
               .push(MaterialPageRoute(builder: (_) => MoodBoard()));
         },
         imageUrl:
-            'https://elearningindustry.com/wp-content/uploads/2020/07/how-to-choose-an-lms-for-your-organization.jpg',
+            'https://www.glossary-internet.ru/upload/medialibrary/2b2/2b2ddaed4746815dfbf3f558407b5e8a.jpg',
       ),
       itemCount: 4,
       separatorBuilder: (_, __) => SizedBox(height: 20),
