@@ -8,96 +8,127 @@ class Style {
 
   static AppTexts texts = AppTexts();
 
+  static String get fontFamily => "Rany";
+
   //text styles
   static TextStyle appName = TextStyle(
     color: colors.black,
     fontSize: 12,
+    fontFamily: fontFamily,
   );
 
   static TextStyle seeComments = TextStyle(
     color: colors.black,
     fontSize: 14,
     fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 
   static TextStyle putComments = TextStyle(
     color: colors.black,
     fontSize: 12,
     fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
   );
 
-  static TextStyle continues = TextStyle(
+  static TextStyle continuees = TextStyle(
     color: colors.black,
     fontSize: 36,
     fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 
   static TextStyle hellouser = TextStyle(
     color: colors.black,
     fontSize: 18,
     fontWeight: FontWeight.w400,
+    fontFamily: fontFamily,
   );
 
   static TextStyle programmer = TextStyle(
     color: colors.white,
     fontSize: 16,
     fontWeight: FontWeight.w400,
+    fontFamily: fontFamily,
   );
 
   static TextStyle indenim = TextStyle(
     color: colors.black,
     fontSize: 18,
     fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
   );
 
   static TextStyle location = TextStyle(
     color: colors.grey,
     fontSize: 9,
+    fontFamily: fontFamily,
   );
 
   static TextStyle graficdizayner = TextStyle(
     color: colors.black,
     fontSize: 18,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 
   static TextStyle design = TextStyle(
     fontSize: 9,
     fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 
   static TextStyle prices = TextStyle(
     color: colors.black,
     fontSize: 14,
     fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
   );
 
   static TextStyle username = TextStyle(
+    color: colors.white,
+    fontSize: 10,
+    fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
+  );
+  static TextStyle username11 = TextStyle(
     color: colors.black,
     fontSize: 10,
     fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
   );
 
   static TextStyle office = TextStyle(
     color: colors.black,
     fontSize: 12,
     fontWeight: FontWeight.w400,
+    fontFamily: fontFamily,
   );
 
   static TextStyle courcename = TextStyle(
     color: colors.black,
     fontSize: 12,
     fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 
   static TextStyle timecourse = TextStyle(
     color: colors.black,
     fontSize: 6,
     fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
   );
 
   static TextStyle cource = TextStyle(
     color: colors.black,
     fontSize: 32,
     fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
+  );
+  static TextStyle coursenamebig = TextStyle(
+    color: colors.white,
+    fontSize: 28,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
   );
 }
