@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:ibs_platform/course/courseHistory.dart';
-import 'package:ibs_platform/course/historysaved.dart';
 import 'package:ibs_platform/theme/style.dart';
 
 class CoursePage extends StatefulWidget {
@@ -132,8 +131,6 @@ class _CoursePageState extends State<CoursePage> {
                                   setState(() {
                                     outline = !outline;
                                   });
-                                  Navigator.of(context).push(MaterialPageRoute(
-                                      builder: (context) => HistoryPage()));
                                 }),
                           ],
                         )
@@ -170,10 +167,7 @@ class _CoursePageState extends State<CoursePage> {
               ),
             ),
             SizedBox(
-              height: 23,
-            ),
-            SizedBox(
-              height: 10,
+              height: 14,
             ),
             Container(
               margin: EdgeInsets.only(left: 24, top: 10, bottom: 10),
