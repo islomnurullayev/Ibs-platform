@@ -136,8 +136,9 @@ class _MoodBoardState extends State<MoodBoard> {
                     width: double.infinity,
                     decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: NetworkImage(
-                              'https://www.glossary-internet.ru/upload/medialibrary/2b2/2b2ddaed4746815dfbf3f558407b5e8a.jpg'),
+                          image: Image.network(
+                                  'https://www.glossary-internet.ru/upload/medialibrary/2b2/2b2ddaed4746815dfbf3f558407b5e8a.jpg')
+                              .image,
                           fit: BoxFit.cover),
                     ),
                   ),

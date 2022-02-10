@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:ibs_platform/Java%20Script%20Course.dart';
+import 'package:ibs_platform/home/home.dart';
 
 class IbsApp extends StatelessWidget {
   const IbsApp({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class IbsApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: JavaCourse(),
+          child: HomeController(),
         ),
       ),
     );
