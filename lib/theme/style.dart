@@ -55,8 +55,11 @@ class Style {
     fontSize: 9,
   );
 
-  static TextStyle graficdizayner =
-      TextStyle(color: colors.black, fontSize: 18, fontWeight: FontWeight.w500);
+  static TextStyle graficdizayner = TextStyle(
+    color: colors.black,
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+  );
 
   static TextStyle design = TextStyle(
     fontSize: 9,
