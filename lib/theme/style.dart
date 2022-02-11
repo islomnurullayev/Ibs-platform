@@ -84,6 +84,12 @@ class Style {
     fontWeight: FontWeight.w300,
     fontFamily: fontFamily,
   );
+  static TextStyle prices1 = TextStyle(
+    color: colors.black,
+    fontSize: 24,
+    fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
+  );
 
   static TextStyle username = TextStyle(
     color: colors.white,
@@ -128,6 +134,12 @@ class Style {
   static TextStyle coursenamebig = TextStyle(
     color: colors.white,
     fontSize: 28,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
+  );
+  static TextStyle vacansyalar = TextStyle(
+    color: colors.black,
+    fontSize: 40,
     fontWeight: FontWeight.w500,
     fontFamily: fontFamily,
   );
