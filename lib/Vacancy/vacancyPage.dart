@@ -24,7 +24,7 @@ class _VacancyState extends State<Vacancy> {
   ];
   List<String> mentors = [
     'Grafic dizayner',
-    'Lava dasturchi',
+    'Java dasturchi',
     '3d max dizayner',
     'Python mentor',
   ];
