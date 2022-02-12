@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/Communitypages/community.dart';
 import 'package:ibs_platform/Vacancy/vacancyPage.dart';
-import 'package:ibs_platform/tabController.dart';
 import 'package:ibs_platform/theme/style.dart';
 
 class MoodBoard extends StatefulWidget {
@@ -294,7 +294,7 @@ class _MoodBoardState extends State<MoodBoard> {
                     child: IconButton(
                       onPressed: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => TabController1()));
+                            builder: (context) => Community()));
                       },
                       icon: Icon(Icons.person_add_alt_1),
                     )),
