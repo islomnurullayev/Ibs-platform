@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ibs_platform/Communitypages/community.dart';
+import 'package:ibs_platform/Vacancy/vacancyPage.dart';
 import 'package:ibs_platform/course.dart';
+import 'package:ibs_platform/course/coursepage.dart';
 import 'package:ibs_platform/home/dashboard.dart';
 import 'package:ibs_platform/theme/style.dart';
 
@@ -17,11 +19,7 @@ class _HomeControllerState extends State<HomeController> {
   static List<Widget> widgetOptions = [
     DashboardController(),
     Course(),
-    Container(
-      width: 100,
-      height: 100,
-      color: Style.colors.fiolet,
-    ),
+    Vacancy(),
     Community(),
     Container(
       width: 100,
@@ -51,8 +49,9 @@ class _HomeControllerState extends State<HomeController> {
           BottomNavigationBarItem(
               icon: Icon(Icons.play_circle_outline), label: "Courses"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag_rounded), label: "Work"),
-          BottomNavigationBarItem(icon: Icon(Icons.video_settings), label: ""),
+              icon: Icon(Icons.shopping_bag_rounded), label: "Vacancy"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.people_alt), label: "Community"),
           BottomNavigationBarItem(
               icon: Icon(Icons.person_outline), label: "Profile"),
         ],

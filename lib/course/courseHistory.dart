@@ -4,7 +4,8 @@ import 'package:ibs_platform/theme/style.dart';
 import 'coursepage.dart';
 
 class CourseHistory extends StatefulWidget {
-  CourseHistory({Key? key}) : super(key: key);
+  final String caption;
+  CourseHistory({Key? key, required this.caption}) : super(key: key);
 
   @override
   State<CourseHistory> createState() => _CourseHistoryState();
@@ -95,14 +96,13 @@ class _CourseHistoryState extends State<CourseHistory> {
           backgroundColor: Style.colors.black,
           leading: IconButton(
             onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => CoursePage()));
+              Navigator.of(context).pop();
             },
             icon: Icon(
               Icons.west,
             ),
           ),
-          title: Text(Style.texts.viewCourses),
+          title: Text(widget.caption),
         ),
         body: Lists);
   }
