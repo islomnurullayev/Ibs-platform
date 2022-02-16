@@ -136,8 +136,7 @@ class _HistoryPageState extends State<HistoryPage> {
           backgroundColor: Style.colors.black,
           leading: IconButton(
             onPressed: () {
-              Navigator.of(context)
-                  .push(MaterialPageRoute(builder: (context) => CoursePage()));
+              Navigator.of(context).pop();
             },
             icon: Icon(
               Icons.west,
