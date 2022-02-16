@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/Communitypages/community.dart';
 import 'package:ibs_platform/course.dart';
 import 'package:ibs_platform/home/dashboard.dart';
 import 'package:ibs_platform/theme/style.dart';
@@ -21,11 +22,7 @@ class _HomeControllerState extends State<HomeController> {
       height: 100,
       color: Style.colors.fiolet,
     ),
-    Container(
-      width: 100,
-      height: 100,
-      color: Style.colors.yellow,
-    ),
+    Community(),
     Container(
       width: 100,
       height: 100,

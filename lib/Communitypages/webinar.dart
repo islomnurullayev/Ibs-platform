@@ -27,8 +27,10 @@ class _WebiinarPageState extends State<WebiinarPage> {
           ),
         ),
         body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            shrinkWrap: true,
+            physics: ScrollPhysics(),
             children: [
               Container(
                 height: 250,
@@ -118,7 +120,9 @@ class _WebiinarPageState extends State<WebiinarPage> {
                   ),
                 ],
               ),
-              Divider(),
+              Divider(
+                height: 4,
+              ),
               Padding(
                 padding: const EdgeInsets.only(left: 17.0, top: 12, bottom: 12),
                 child: Row(
@@ -163,7 +167,86 @@ class _WebiinarPageState extends State<WebiinarPage> {
                   ],
                 ),
               ),
-              Divider()
+              Divider(
+                height: 4,
+              ),
+              Container(
+                height: 18,
+                width: 110,
+                margin: EdgeInsets.only(left: 22, top: 12),
+                child: Text(
+                  'kommentlar  235',
+                  style: Style.office,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 22, top: 8),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 10,
+                      backgroundColor: Style.colors.yellow,
+                      child: Center(
+                        child: Text(
+                          'T',
+                          style: Style.seeComments,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(left: 6, right: 32),
+                      height: 20,
+                      width: 280,
+                      child: TextFormField(
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(),
+                            hintText: Style.texts.putComments,
+                            hintStyle: TextStyle(fontSize: 12),
+                            contentPadding: EdgeInsets.only(top: 3, left: 10)),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 15),
+                height: 250,
+                width: double.infinity,
+                color: Style.colors.blue,
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 15),
+                height: 250,
+                width: double.infinity,
+                color: Style.colors.blue,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 8, left: 22),
+                child: Row(children: [
+                  CircleAvatar(
+                    backgroundColor: Style.colors.fiolet,
+                  ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Junior va middle dasturchi farqi! ',
+                        style: Style.username11,
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        'Maraim Tuxtasunov  *   49k * 1 oy oldin',
+                        style: Style.timecourse,
+                      )
+                    ],
+                  ),
+                ]),
+              )
             ],
           ),
         ),

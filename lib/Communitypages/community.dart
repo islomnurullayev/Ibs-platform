@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/Communitypages/blogpage.dart';
 import 'package:ibs_platform/Communitypages/webinar.dart';
 import 'package:ibs_platform/theme/style.dart';
 
@@ -261,69 +262,73 @@ class _BlogpartState extends State<Blogpart> {
       physics: ClampingScrollPhysics(),
       child: Row(
         children: [
-          Container(
-            height: 137,
-            width: 236,
-            margin: EdgeInsets.only(top: 8, left: 9),
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                color: Style.colors.pink),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Container(
-                      height: 27,
-                      width: 27,
-                      margin: EdgeInsets.only(left: 23, top: 37),
-                      color: Style.colors.black,
-                    ),
-                    Container(
-                      height: 27,
-                      width: 27,
-                      margin: EdgeInsets.only(left: 5, top: 37),
-                      color: Style.colors.black,
-                    ),
-                  ],
-                ),
-                Container(
-                  margin: EdgeInsets.only(left: 25, top: 5),
-                  child: Text(
-                    'Vector va raster\ngrafica farqi!',
-                    style: Style.programmer,
+          GestureDetector(
+            onTap: () => Navigator.of(context)
+                .push(MaterialPageRoute(builder: (context) => Blogpage())),
+            child: Container(
+              height: 137,
+              width: 236,
+              margin: EdgeInsets.only(top: 8, left: 9),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                  color: Style.colors.pink),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        height: 27,
+                        width: 27,
+                        margin: EdgeInsets.only(left: 23, top: 37),
+                        color: Style.colors.black,
+                      ),
+                      Container(
+                        height: 27,
+                        width: 27,
+                        margin: EdgeInsets.only(left: 5, top: 37),
+                        color: Style.colors.black,
+                      ),
+                    ],
                   ),
-                ),
-                SizedBox(
-                  height: 11,
-                ),
-                Row(
-                  children: [
-                    Container(
-                      margin: EdgeInsets.only(left: 23),
-                      height: 14,
-                      width: 14,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle, color: Style.colors.white),
-                      child: Center(
-                        child: Text(
-                          'A',
-                          style: Style.putComments,
+                  Container(
+                    margin: EdgeInsets.only(left: 25, top: 5),
+                    child: Text(
+                      'Vector va raster\ngrafica farqi!',
+                      style: Style.programmer,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 11,
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(left: 23),
+                        height: 14,
+                        width: 14,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle, color: Style.colors.white),
+                        child: Center(
+                          child: Text(
+                            'A',
+                            style: Style.putComments,
+                          ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Container(
-                      child: Text(
-                        'Abdurashid\n Zaxurov ',
-                        style: Style.timecourse,
+                      SizedBox(
+                        width: 4,
                       ),
-                    )
-                  ],
-                )
-              ],
+                      Container(
+                        child: Text(
+                          'Abdurashid\n Zaxurov ',
+                          style: Style.timecourse,
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           Container(

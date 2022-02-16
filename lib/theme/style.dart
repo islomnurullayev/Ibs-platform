@@ -139,6 +139,12 @@ class Style {
     fontWeight: FontWeight.w400,
     fontFamily: fontFamily,
   );
+  static TextStyle avatartext = TextStyle(
+    color: colors.black,
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    fontFamily: fontFamily,
+  );
 
   static TextStyle courcename = TextStyle(
     color: colors.black,
