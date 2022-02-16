@@ -286,29 +286,7 @@ class _MoodBoardState extends State<MoodBoard> {
             SizedBox(
               height: 15,
             ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Container(
-                    padding: EdgeInsets.only(left: 19),
-                    child: IconButton(
-                      onPressed: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => TabController1()));
-                      },
-                      icon: Icon(Icons.person_add_alt_1),
-                    )),
-                IconButton(
-                    onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Vacancy()));
-                    },
-                    icon: Icon(
-                      Icons.reply,
-                      textDirection: TextDirection.rtl,
-                    )),
-              ],
-            ),
+
           ],
         ),
       ),

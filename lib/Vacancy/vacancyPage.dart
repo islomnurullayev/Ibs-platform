@@ -135,6 +135,10 @@ class _VacancyState extends State<Vacancy> {
                 SizedBox(
                   height: 700,
                   child: ListView.separated(
+                    padding: EdgeInsets.all(16),
+                    shrinkWrap: true,
+                    scrollDirection: Axis.vertical,
+                    physics: ClampingScrollPhysics(),
                     itemBuilder: (BuildContext context, int index) {
                       return GestureDetector(
                         onTap: () {
@@ -147,7 +151,6 @@ class _VacancyState extends State<Vacancy> {
                               borderSide: BorderSide(
                                   color: Style.colors.white, width: 1)),
                           elevation: 8,
-                          margin: EdgeInsets.only(left: 24, right: 66),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -170,7 +173,6 @@ class _VacancyState extends State<Vacancy> {
                                       Container(
                                         height: 16,
                                         margin: EdgeInsets.only(top: 30),
-                                        width: 63,
                                         child: Text(
                                           companies[index],
                                           style: Style.indenim,
@@ -188,7 +190,7 @@ class _VacancyState extends State<Vacancy> {
                                   Spacer(),
                                   Container(
                                     margin: EdgeInsets.only(top: 29, right: 41),
-                                    width: 34,
+                                    width: 38,
                                     height: 11,
                                     child: Text(
                                       'office',

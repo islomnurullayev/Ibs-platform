@@ -43,7 +43,7 @@ class _VacancyDesignState extends State<VacancyDesign> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 36, left: 30, right: 40),
+                      margin: EdgeInsets.only(top: 36, left: 25, right: 40),
                       height: 36,
                       width: 36,
                       decoration: BoxDecoration(
