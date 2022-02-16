@@ -16,9 +16,15 @@ class Style {
     fontSize: 12,
     fontFamily: fontFamily,
   );
-
   static TextStyle seeComments = TextStyle(
     color: colors.black,
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
+  );
+
+  static TextStyle avatar = TextStyle(
+    color: colors.white,
     fontSize: 14,
     fontWeight: FontWeight.w500,
     fontFamily: fontFamily,
@@ -140,6 +146,12 @@ class Style {
   static TextStyle vacansyalar = TextStyle(
     color: colors.black,
     fontSize: 40,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
+  );
+  static TextStyle smmCourse = TextStyle(
+    color: colors.white,
+    fontSize: 42,
     fontWeight: FontWeight.w500,
     fontFamily: fontFamily,
   );
