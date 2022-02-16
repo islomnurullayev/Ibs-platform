@@ -16,6 +16,11 @@ class Style {
     fontSize: 12,
     fontFamily: fontFamily,
   );
+  static TextStyle addchat = TextStyle(
+    color: colors.black,
+    fontSize: 16,
+    fontFamily: fontFamily,
+  );
   static TextStyle seeComments = TextStyle(
     color: colors.black,
     fontSize: 14,
@@ -33,7 +38,7 @@ class Style {
   static TextStyle putComments = TextStyle(
     color: colors.black,
     fontSize: 12,
-    fontWeight: FontWeight.w300,
+    fontWeight: FontWeight.w700,
     fontFamily: fontFamily,
   );
 
@@ -77,6 +82,12 @@ class Style {
     fontWeight: FontWeight.w500,
     fontFamily: fontFamily,
   );
+  static TextStyle communiyyy = TextStyle(
+    color: colors.primary,
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
+  );
 
   static TextStyle design = TextStyle(
     fontSize: 9,
@@ -94,6 +105,12 @@ class Style {
     color: colors.black,
     fontSize: 24,
     fontWeight: FontWeight.w300,
+    fontFamily: fontFamily,
+  );
+  static TextStyle filtrlash = TextStyle(
+    color: colors.black,
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
     fontFamily: fontFamily,
   );
 
@@ -114,6 +131,18 @@ class Style {
     color: colors.black,
     fontSize: 12,
     fontWeight: FontWeight.w400,
+    fontFamily: fontFamily,
+  );
+  static TextStyle juniorandmiddle = TextStyle(
+    color: colors.black,
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
+    fontFamily: fontFamily,
+  );
+  static TextStyle avatartext = TextStyle(
+    color: colors.black,
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
     fontFamily: fontFamily,
   );
 
@@ -144,6 +173,12 @@ class Style {
     fontFamily: fontFamily,
   );
   static TextStyle vacansyalar = TextStyle(
+    color: colors.black,
+    fontSize: 40,
+    fontWeight: FontWeight.w500,
+    fontFamily: fontFamily,
+  );
+  static TextStyle webinar = TextStyle(
     color: colors.black,
     fontSize: 40,
     fontWeight: FontWeight.w500,
