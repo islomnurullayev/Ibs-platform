@@ -133,6 +133,12 @@ class Style {
     fontWeight: FontWeight.w400,
     fontFamily: fontFamily,
   );
+  static TextStyle juniorandmiddle = TextStyle(
+    color: colors.black,
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
+    fontFamily: fontFamily,
+  );
 
   static TextStyle courcename = TextStyle(
     color: colors.black,

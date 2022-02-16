@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibs_platform/Communitypages/webinar.dart';
 import 'package:ibs_platform/theme/style.dart';
 
 class Community extends StatefulWidget {
@@ -123,25 +124,29 @@ class _CommunityState extends State<Community> {
               physics: ClampingScrollPhysics(),
               child: Row(
                 children: [
-                  Container(
-                    height: 137,
-                    width: 236,
-                    margin: EdgeInsets.only(top: 8, left: 9),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Style.colors.blue),
+                  GestureDetector(
+                    onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => WebiinarPage())),
                     child: Container(
-                      height: 32,
-                      width: 32,
-                      margin: EdgeInsets.all(50),
+                      height: 137,
+                      width: 236,
+                      margin: EdgeInsets.only(top: 8, left: 9),
                       decoration: BoxDecoration(
-                          shape: BoxShape.circle, color: Style.colors.black),
-                      child: Center(
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.play_arrow_rounded,
-                            color: Style.colors.primary,
+                          borderRadius: BorderRadius.circular(20),
+                          color: Style.colors.blue),
+                      child: Container(
+                        height: 32,
+                        width: 32,
+                        margin: EdgeInsets.all(50),
+                        decoration: BoxDecoration(
+                            shape: BoxShape.circle, color: Style.colors.black),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.play_arrow_rounded,
+                              color: Style.colors.primary,
+                            ),
                           ),
                         ),
                       ),

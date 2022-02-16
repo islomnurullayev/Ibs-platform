@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ibs_platform/Communitypages/community.dart';
-import 'package:ibs_platform/Vacancy/vacancyPage.dart';
+import 'package:ibs_platform/course/coursepage.dart';
 import 'package:ibs_platform/theme/style.dart';
 
 class MoodBoard extends StatefulWidget {
@@ -300,8 +300,8 @@ class _MoodBoardState extends State<MoodBoard> {
                     )),
                 IconButton(
                     onPressed: () {
-                      Navigator.of(context).push(
-                          MaterialPageRoute(builder: (context) => Vacancy()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => CoursePage()));
                     },
                     icon: Icon(
                       Icons.reply,
