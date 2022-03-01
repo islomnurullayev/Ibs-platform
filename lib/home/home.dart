@@ -35,28 +35,30 @@ class _HomeControllerState extends State<HomeController> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: widgetOptions.elementAt(selectedIndex),
-      bottomNavigationBar: BottomNavigationBar(
-        iconSize: 30,
-        type: BottomNavigationBarType.fixed,
-        selectedFontSize: 20,
-        fixedColor: Style.colors.primary,
-        unselectedItemColor: Style.colors.white,
-        backgroundColor: Style.colors.black,
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.play_circle_outline), label: "Courses"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_bag_rounded), label: "Vacancy"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.people_alt), label: "Community"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline), label: "Profile"),
-        ],
-        currentIndex: selectedIndex,
-        onTap: onItemTapped,
+    return SafeArea(
+      child: Scaffold(
+        body: widgetOptions.elementAt(selectedIndex),
+        bottomNavigationBar: BottomNavigationBar(
+          iconSize: 30,
+          type: BottomNavigationBarType.fixed,
+          selectedFontSize: 20,
+          fixedColor: Style.colors.primary,
+          unselectedItemColor: Style.colors.white,
+          backgroundColor: Style.colors.black,
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.play_circle_outline), label: "Courses"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.shopping_bag_rounded), label: "Vacancy"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.people_alt), label: "Community"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.person_outline), label: "Profile"),
+          ],
+          currentIndex: selectedIndex,
+          onTap: onItemTapped,
+        ),
       ),
     );
   }
