@@ -59,7 +59,7 @@ class _OnboardingpageState extends State<Onboardingpage> {
                       ),
                     ),
                     SizedBox(
-                      height: 30,
+                      height: 20,
                     ),
                     Text(contents[index].discription2,
                         textAlign: TextAlign.center,
@@ -93,10 +93,9 @@ class _OnboardingpageState extends State<Onboardingpage> {
     return Container(
       margin: EdgeInsets.only(right: 5),
       height: 10,
-      width: currentIndex == index ? 20 : 10,
+      width: currentIndex == index ? 30 : 10,
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Theme.of(context).primaryColor),
+          borderRadius: BorderRadius.circular(20), color: Style.colors.primary),
     );
   }
 }
